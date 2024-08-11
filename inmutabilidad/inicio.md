@@ -48,16 +48,20 @@ console.log(updatedPerson); // { name: 'John', age: 31 }
   </p>
   <br>
 
-  <span style="color:#388E3C;">Ejemplo en JavaScript:</span>
+<h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
+<div style="background-color:#f4f4f4; padding: 20px;  border-top: 4px solid #007ACC;">
+
+</div>
 
 ```javascript
-// Ejemplo de mutabilidad en JavaScript
-let mutablePerson = { name: "Alice", age: 22 };
+    // Ejemplo de mutabilidad en JavaScript
+    let mutablePerson = { name: "Alice", age: 22 };
 
-// Modificamos directamente el objeto
-mutablePerson.age = 23;
+    // Modificamos directamente el objeto
+    mutablePerson.age = 23;
 
-console.log(mutablePerson); // { name: 'Alice', age: 23 }
+    console.log(mutablePerson); // { name: 'Alice', age: 23 }
+
 ```
 
 ---
@@ -84,76 +88,75 @@ console.log(mutablePerson); // { name: 'Alice', age: 23 }
   <span style="color:#333333;">Los métodos inmutables están diseñados para no alterar el estado interno de un objeto. En lugar de modificar el objeto actual, estos métodos devuelven un nuevo objeto con el estado actualizado. Este enfoque es crucial para mantener la inmutabilidad y permite que el código sea más fácil de entender, probar y mantener.</span>
     <br>
 
-  <h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
-<div style="display: flex; flex-direction: column; gap: 20px; color:#333333;">
-  <div style="background-color:#f4f4f4; padding: 20px; border-radius: 5px; border-left: 4px solid #007ACC;">
+<h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
+<div style="display: flex; flex-direction: column; gap: 00px; color:#333333;">
+  <div style="background-color:#f4f4f4; padding: 20px;  border-top: 4px solid #007ACC;">
     <h3 style="margin-top: 0;">Método: <code>map</code></h3>
     <p><strong>Descripción:</strong> Aplica una función a cada elemento de un arreglo y devuelve un nuevo arreglo con los resultados, sin modificar el original.</p>
 
-```javascript
-
-const numbers = [1, 2, 3];
-const doubled = numbers.map(n => n * 2);
-            
-console.log(doubled); // [2, 4, 6]
-```
-
 </div>
 
+```javascript
 
+    const numbers = [1, 2, 3];
+    const doubled = numbers.map(n => n * 2);
+                
+    console.log(doubled); // [2, 4, 6]
 
-  <div style="background-color:#f4f4f4; padding: 20px; border-radius: 5px; border-left: 4px solid #007ACC;">
+```
+
+<br>
+
+  <div style="background-color:#f4f4f4; padding: 20px;  border-top: 4px solid #007ACC;">
     <h3 style="margin-top: 0;">Método: <code>filter</code></h3>
     <p><strong>Descripción:</strong> Crea un nuevo arreglo con todos los elementos que pasen una prueba definida, sin alterar el arreglo original.</p>
     <p><strong>Ejemplo en JavaScript:</strong></p>
 
-```javascript
-
-const numbers = [1, 2, 3, 4];
-const evenNumbers = numbers.filter(n => n % 2 === 0);
-
-console.log(evenNumbers); // [2, 4]
-```
-
   </div>
 
+```javascript
 
+    const numbers = [1, 2, 3, 4];
+    const evenNumbers = numbers.filter(n => n % 2 === 0);
 
-  <div style="background-color:#f4f4f4; padding: 20px; border-radius: 5px; border-left: 4px solid #007ACC;">
+    console.log(evenNumbers); // [2, 4]
+
+```
+<br>
+
+  <div style="background-color:#f4f4f4; padding: 20px;  border-top: 4px solid #007ACC;">
     <h3 style="margin-top: 0;">Método: <code>concat</code></h3>
     <p><strong>Descripción:</strong> Combina dos o más arreglos y devuelve un nuevo arreglo, dejando los originales intactos.</p>
     <p><strong>Ejemplo en JavaScript:</strong></p>
   
-```javascript
-
-const arr1 = [1, 2];
-const arr2 = [3, 4];
-
-const combined = arr1.concat(arr2);
-
-console.log(combined); // [1, 2, 3, 4]
-```
-
   </div>
 
+```javascript
 
+    const arr1 = [1, 2];
+    const arr2 = [3, 4];
 
-  <div style="background-color:#f4f4f4; padding: 20px; border-radius: 5px; border-left: 4px solid #007ACC;">
+    const combined = arr1.concat(arr2);
+
+    console.log(combined); // [1, 2, 3, 4]
+
+```
+<br>
+
+<div style="background-color:#f4f4f4; padding: 20px;  border-top: 4px solid #007ACC;">
     <h3 style="margin-top: 0;">Método: <code>slice</code></h3>
     <p><strong>Descripción:</strong> Extrae una sección de un arreglo y devuelve un nuevo arreglo sin modificar el original.</p>
     <p><strong>Ejemplo en JavaScript:</strong></p>
-
-
+</div>
+  
 ```javascript
 
-const numbers = [1, 2, 3, 4, 5];
-const part = numbers.slice(1, 3);
+    const numbers = [1, 2, 3, 4, 5];
+    const part = numbers.slice(1, 3);
 
-console.log(part); // [2, 3]
+    console.log(part); // [2, 3]
+
 ```
-
-  </div>
-
 
 </div>
 
@@ -173,22 +176,23 @@ console.log(part); // [2, 3]
   <span style="color:#333333;">
   El patrón de "Copy-on-write" es una técnica utilizada para optimizar la gestión de la memoria cuando se trabaja con datos inmutables. <span style="color:#E53935;">En lugar de hacer una copia completa de un objeto al modificarlo, se crea una copia solo cuando es necesario cambiar el estado del objeto.</span> Este patrón es eficiente porque permite que múltiples instancias compartan la misma referencia hasta que una de ellas necesita ser modificada. Solo en ese momento se realiza la copia, lo que reduce el consumo de memoria y mejora el rendimiento.
   </span>
-   <h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
-<div style="background-color:#f4f4f4; padding: 20px; border-radius: 5px; margin-top: 10px; border-left: 4px solid #007ACC;">
+<h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
+<div style="background-color:#f4f4f4; padding: 20px;  margin-top: 10px; border-top: 4px solid #007ACC;">
 
+</div>
 
 ```javascript
 
-let originalArray = [1, 2, 3];
-let newArray = [...originalArray]; // Copy-on-write
-        
-newArray.push(4);
+    let originalArray = [1, 2, 3];
+    let newArray = [...originalArray]; // Copy-on-write
+            
+    newArray.push(4);
 
-console.log(originalArray); // [1, 2, 3]
-console.log(newArray); // [1, 2, 3, 4]
+    console.log(originalArray); // [1, 2, 3]
+    console.log(newArray); // [1, 2, 3, 4]
+
 ```
 
-</div>
 <br> 
 
 - <span style="color:#007ACC;"><strong>Cierre (Closure)</strong></span>:  
@@ -196,33 +200,35 @@ console.log(newArray); // [1, 2, 3, 4]
   En la programación funcional, un cierre (closure) es una función que recuerda el entorno en el que fue creada, incluso después de que ese entorno haya dejado de existir. <span style="color:#E53935;">Los cierres se relacionan con la inmutabilidad porque permiten capturar y mantener un estado sin necesidad de modificar variables externas.</span> Este patrón es común en lenguajes funcionales donde la inmutabilidad es una característica clave, ya que facilita la creación de funciones que son seguras y predecibles.
   </span>
 
-    <h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
-<div style="background-color:#f4f4f4; padding: 20px; border-radius: 5px; margin-top: 10px; border-left: 4px solid #007ACC;">
+<h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
+<div style="background-color:#f4f4f4; padding: 20px;  border-top: 4px solid #007ACC;">
+</div>
 
 ```javascript
 
-function createCounter() {
-let count = 0; // Variable inmutable dentro del closure
-       
-return function() {
-    count += 1; 
-    return count;
-};
-}
+    function createCounter() {
+    let count = 0; // Variable inmutable dentro del closure
+        
+    return function() {
+        count += 1; 
+        return count;
+    };
+    }
 
 
-const counter = createCounter();
+    const counter = createCounter();
 
-console.log(counter()); // 1
-console.log(counter()); // 2
+    console.log(counter()); // 1
+    console.log(counter()); // 2
 
-const counter2 = createCounter();
+    const counter2 = createCounter();
 
-console.log(counter2()); // 1
-console.log(counter2()); // 2
+    console.log(counter2()); // 1
+    console.log(counter2()); // 2
+
 ```
 
-</div>
+
 
 ---
 
@@ -234,20 +240,23 @@ Las funciones inmutables no modifican el estado original, sino que devuelven una
 
 - #### **Implementación de Funciones Inmutables**
 
-    <h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
+<h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
+<div style="background-color:#f4f4f4; padding: 20px;  border-top: 4px solid #007ACC;">
+</div>
 
 ```javascript
 
-// Función inmutable para sumar un número a un arreglo
-function addNumber(arr, num) {
-    return [...arr, num];
-}
+    // Función inmutable para sumar un número a un arreglo
+    function addNumber(arr, num) {
+        return [...arr, num];
+    }
 
-const originalArray = [1, 2, 3];
-const newArray = addNumber(originalArray, 4);
+    const originalArray = [1, 2, 3];
+    const newArray = addNumber(originalArray, 4);
 
-console.log(originalArray); // [1, 2, 3]
-console.log(newArray);      // [1, 2, 3, 4]
+    console.log(originalArray); // [1, 2, 3]
+    console.log(newArray);      // [1, 2, 3, 4]
+
 ```
 
 <p> 
@@ -256,7 +265,9 @@ En este ejemplo, la función addNumber no modifica el originalArray, sino que cr
 <br>
 
 - #### **Ejemplo en JavaScript - Mutable:**
-    <h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
+<h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
+<div style="background-color:#f4f4f4; padding: 20px;  border-top: 4px solid #007ACC;">
+</div>
 
 ```javascript
     // Función mutable para sumar un número a un arreglo
@@ -283,34 +294,41 @@ Refactorizar código mutable para que sea inmutable puede mejorar la previsibili
 </p>
 
 - #### Código Mutable:
-    <h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
+<h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
+<div style="background-color:#f4f4f4; padding: 20px;  border-top: 4px solid #007ACC;">
+</div>
 
 ```javascript
-let person = { name: 'Alice', age: 25 };
+    let person = { name: 'Alice', age: 25 };
 
-function celebrateBirthday(person) {
-    person.age += 1; // Modifica el objeto original
-}
+    function celebrateBirthday(person) {
+        person.age += 1; // Modifica el objeto original
+    }
 
-celebrateBirthday(person);
-console.log(person); // { name: 'Alice', age: 26 }
+    celebrateBirthday(person);
+    console.log(person); // { name: 'Alice', age: 26 }
+
 ```
 
 <br>
 
 - #### Código Refactorizado a Inmutable::
-    <h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
-
+<h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
+<div style="background-color:#f4f4f4; padding: 20px;  border-top: 4px solid #007ACC;">
+</div>
+    
+    
 ```javascript
-function celebrateBirthdayImmutable(person) {
-    return { ...person, age: person.age + 1 }; // Crea un nuevo objeto
-}
+    function celebrateBirthdayImmutable(person) {
+        return { ...person, age: person.age + 1 }; // Crea un nuevo objeto
+    }
 
-const person = { name: 'Alice', age: 25 };
-const updatedPerson = celebrateBirthdayImmutable(person);
+    const person = { name: 'Alice', age: 25 };
+    const updatedPerson = celebrateBirthdayImmutable(person);
 
-console.log(person); // { name: 'Alice', age: 25 }
-console.log(updatedPerson); // { name: 'Alice', age: 26 }
+    console.log(person); // { name: 'Alice', age: 25 }
+    console.log(updatedPerson); // { name: 'Alice', age: 26 }
+    
 ```
 
 ---
