@@ -60,7 +60,7 @@ mutablePerson.age = 23;
 console.log(mutablePerson); // { name: 'Alice', age: 23 }
 ```
 
-<br>
+---
 
 ## <span style="color:#333333;" id="ventajas-de-la-inmutabilidad">2. Ventajas de la Inmutabilidad</span>
 
@@ -72,7 +72,9 @@ console.log(mutablePerson); // { name: 'Alice', age: 23 }
 <br>
 - <span style="color:#388E3C;"><strong>Predictibilidad y simplicidad</strong></span>:  
   <span style="color:#333333;">La inmutabilidad reduce la complejidad en la gestión del estado, ya que no hay necesidad de rastrear cambios en el estado de los objetos a lo largo del tiempo. Esto hace que el comportamiento del programa sea más predecible y que el código sea más fácil de entender y mantener.</span>
-<br>
+
+---
+
 ## <span style="color:#333333;" id="implementación-de-inmutabilidad">3. Implementación de Inmutabilidad</span>
 
 - <span style="color:#E53935;"><strong>Estructuras de datos inmutables</strong></span>:  
@@ -81,7 +83,8 @@ console.log(mutablePerson); // { name: 'Alice', age: 23 }
 - <span style="color:#007ACC;"><strong>Métodos inmutables</strong></span>:  
   <span style="color:#333333;">Los métodos inmutables están diseñados para no alterar el estado interno de un objeto. En lugar de modificar el objeto actual, estos métodos devuelven un nuevo objeto con el estado actualizado. Este enfoque es crucial para mantener la inmutabilidad y permite que el código sea más fácil de entender, probar y mantener.</span>
     <br>
-  <span style="color:#388E3C;">Ejemplo en JavaScript:</span>
+
+  <h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
 <div style="display: flex; flex-direction: column; gap: 20px; color:#333333;">
   <div style="background-color:#f4f4f4; padding: 20px; border-radius: 5px; border-left: 4px solid #007ACC;">
     <h3 style="margin-top: 0;">Método: <code>map</code></h3>
@@ -154,13 +157,15 @@ console.log(part); // [2, 3]
 
 </div>
 
-
+---
 
 ## <span style="color:#333333;" id="inmutabilidad-en-diferentes-lenguajes">4. Inmutabilidad en Diferentes Lenguajes</span>
 
 - **Inmutabilidad en Java**: Uso de la palabra clave `final` y librerías como `Guava` para estructuras de datos inmutables.
 - **Inmutabilidad en JavaScript**: Uso de `const`, `Object.freeze()`, y librerías como `Immutable.js`.
 - **Inmutabilidad en otros lenguajes funcionales**: Como Haskell o Scala, donde la inmutabilidad es un concepto central.
+
+---
 
 ## <span style="color:#333333;" id="patrones-comunes-asociados-a-la-inmutabilidad">5. Patrones Comunes Asociados a la Inmutabilidad</span>
 
@@ -218,7 +223,8 @@ console.log(counter2()); // 2
 ```
 
 </div>
-<br>
+
+---
 
 ## <span style="color:#333333;" id="casos-prácticos-y-ejemplos">6. Casos Prácticos y Ejemplos</span>
 
@@ -307,24 +313,27 @@ console.log(person); // { name: 'Alice', age: 25 }
 console.log(updatedPerson); // { name: 'Alice', age: 26 }
 ```
 
-<br>
+---
 
 ## <span style="color:#333333;" id="desventajas-y-desafíos">7. Desventajas y Desafíos</span>
 
 - **Coste en rendimiento**: Cuándo la inmutabilidad puede ser menos eficiente en términos de uso de memoria y procesamiento.
 - **Complejidad en ciertas situaciones**: Casos donde la inmutabilidad puede complicar el diseño del software.
-<br>
+
+---
 
 ## <span style="color:#333333;" id="herramientas-y-librerías">8. Herramientas y Librerías</span>
 
 - **Librerías para estructuras inmutables**: Herramientas disponibles para manejar datos inmutables en diferentes lenguajes.
-<br>
+
+---
 
 ## <span style="color:#333333;" id="buenas-prácticas">9. Buenas Prácticas</span>
 
 - **Cuándo aplicar inmutabilidad**: Directrices sobre cuándo es mejor optar por la inmutabilidad.
 - **Cómo combinar inmutabilidad con otros paradigmas**: Integración con otros enfoques de diseño de software.
-<br>
+
+---
 
 ## <span style="color:#333333;" id="conclusiones-y-reflexiones-finales">10. Conclusiones y Reflexiones Finales</span>
 
