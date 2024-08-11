@@ -1,6 +1,6 @@
-#### <span style="color:#333333;">Sección Introducción:</span> [Introducción](../Introduccion.md)
-
 # <span style="color:#333333;" id="inicio">Inmutabilidad en Programación Funcional</span>
+
+#### <span style="color:#333333;">Sección Introducción:</span> [Introducción](../Introduccion.md)
 
 ## <span style="color:#333333;">Índice</span>
 
