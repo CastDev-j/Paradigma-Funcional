@@ -24,9 +24,8 @@
   <p style="color:#333333;">
   La inmutabilidad significa que una vez que se ha creado un dato, no puede ser modificado. En lugar de cambiar el estado de un objeto o variable, se crean nuevos objetos con los estados actualizados. Esto ayuda a evitar efectos secundarios no deseados y facilita el desarrollo de software más predecible y confiable.
   </p>
-  <br>
+  <h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
 
-  <span style="color:#388E3C;">Ejemplo en JavaScript:</span>
 
 ```javascript
 // Ejemplo de inmutabilidad en JavaScript
@@ -38,6 +37,7 @@ const updatedPerson = { ...person, age: 31 };
 console.log(person); // { name: 'John', age: 30 }
 console.log(updatedPerson); // { name: 'John', age: 31 }
 ```
+
 <br>
 
 - **Comparación con mutabilidad**:
@@ -49,6 +49,7 @@ console.log(updatedPerson); // { name: 'John', age: 31 }
   <br>
 
   <span style="color:#388E3C;">Ejemplo en JavaScript:</span>
+
 ```javascript
 // Ejemplo de mutabilidad en JavaScript
 let mutablePerson = { name: "Alice", age: 22 };
@@ -58,6 +59,7 @@ mutablePerson.age = 23;
 
 console.log(mutablePerson); // { name: 'Alice', age: 23 }
 ```
+
 <br>
 
 ## <span style="color:#333333;" id="ventajas-de-la-inmutabilidad">2. Ventajas de la Inmutabilidad</span>
@@ -92,6 +94,7 @@ const doubled = numbers.map(n => n * 2);
             
 console.log(doubled); // [2, 4, 6]
 ```
+
 </div>
 
 
@@ -108,6 +111,7 @@ const evenNumbers = numbers.filter(n => n % 2 === 0);
 
 console.log(evenNumbers); // [2, 4]
 ```
+
   </div>
 
 
@@ -126,6 +130,7 @@ const combined = arr1.concat(arr2);
 
 console.log(combined); // [1, 2, 3, 4]
 ```
+
   </div>
 
 
@@ -177,6 +182,7 @@ newArray.push(4);
 console.log(originalArray); // [1, 2, 3]
 console.log(newArray); // [1, 2, 3, 4]
 ```
+
 </div>
 <br> 
 
@@ -210,6 +216,7 @@ const counter2 = createCounter();
 console.log(counter2()); // 1
 console.log(counter2()); // 2
 ```
+
 </div>
 <br>
 
@@ -224,6 +231,7 @@ Las funciones inmutables no modifican el estado original, sino que devuelven una
     <h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
 
 ```javascript
+
 // Función inmutable para sumar un número a un arreglo
 function addNumber(arr, num) {
     return [...arr, num];
@@ -235,6 +243,7 @@ const newArray = addNumber(originalArray, 4);
 console.log(originalArray); // [1, 2, 3]
 console.log(newArray);      // [1, 2, 3, 4]
 ```
+
 <p> 
 En este ejemplo, la función addNumber no modifica el originalArray, sino que crea un nuevo arreglo con el número añadido.
 </p>
@@ -257,6 +266,7 @@ En este ejemplo, la función addNumber no modifica el originalArray, sino que cr
     console.log(modifiedArray); // [1, 2, 3, 4]
 
 ```
+
 <p> 
 En este caso, la función addNumberMutable modifica el originalArray directamente.
 </p>
@@ -279,6 +289,7 @@ function celebrateBirthday(person) {
 celebrateBirthday(person);
 console.log(person); // { name: 'Alice', age: 26 }
 ```
+
 <br>
 
 - #### Código Refactorizado a Inmutable::
