@@ -93,7 +93,7 @@
     <br>
 
 <h6 style="color:#388E3C;">Ejemplo en JavaScript:</h6>
-<div style="display: flex; flex-direction: column; gap: 00px; color:#333333;">
+
   <div style="background-color:#f4f4f4; padding: 20px;  border-top: 4px solid #007ACC;">
     <h3 style="margin-top: 0;">Método: <code>map</code></h3>
     <p><strong>Descripción:</strong> Aplica una función a cada elemento de un arreglo y devuelve un nuevo arreglo con los resultados, sin modificar el original.</p>
@@ -172,7 +172,7 @@
 ```
 
 
-</div>
+
 
 ---
 
